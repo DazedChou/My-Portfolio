@@ -8,7 +8,9 @@ header h1 {
     font-size: 50px;
 
 }
-
+body{
+    background-color:rgb(195, 226, 231);
+}
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -16,10 +18,83 @@ header h1 {
     background: #13293d;
     color: #fff;
     align-items: center;
+    margin: 0%;
 }
 
 header ul li , header ul li a{
     display: inline;
     color: white;
     font-size: 25px;
+}
+
+.photo {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+
+.card {
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    flex: 1 0 300px;
+    width: auto;
+
+}
+
+.card h2{
+    align-self: center;
+    margin:auto;
+}
+
+.about-me{
+   display: flex;
+   flex-direction: column;
+   margin: 2%;
+   text-align: center;
+   width: 100%;
+}
+.about-title{
+    width: 30%;
+    margin: auto;
+}
+.about-info{
+    margin: 3%;
+}
+.vl {
+    border-bottom: 3px solid #13293d;
+    float: top;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.work-title {
+    width: 30%;
+    margin: auto;
+    text-align: center;   
+
+}
+.my-work{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    
+}
+
+@media screen and (max-width:1000px){
+    .card{
+        flex: 1 0 100px;
+    }
 }
