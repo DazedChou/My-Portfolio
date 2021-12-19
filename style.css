@@ -42,19 +42,6 @@ main {
 }
 
 
-.card {
-    display: flex;
-    padding: 10px;
-    margin: 20px;
-    flex: 1 0 300px;
-    width: auto;
-
-}
-
-.card h2{
-    align-self: center;
-    margin:auto;
-}
 
 .about-me{
    display: flex;
@@ -68,7 +55,9 @@ main {
     margin: auto;
 }
 .about-info{
-    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
 }
 .vl {
     border-bottom: 3px solid #13293d;
@@ -78,6 +67,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 2%;
 }
 .work-title {
     width: 30%;
@@ -85,13 +75,45 @@ main {
     text-align: center;   
 
 }
-.my-work{
+
+.work-info header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    height: 300px;
+    color: turquoise;
+}
+
+.work-info header a{
+    color:turquoise;
+    text-decoration: underline;
+    font-size: 24px;
+}
+#1-link:visited{
+    color: tomato;
+}
+
+
+.center-right{
+    display: flex;
+    position: absolute;
+    top:125px;
+    left:0px;
+    background:#13293d;
+}
+
+.center-right h2{
+    margin: auto 20px;
+}
+
+/* .my-work{
     display: flex;
     width: 100%;
     height: 100%;
     background-size: cover;
     
-}
+} */
 
 @media screen and (max-width:1000px){
     .card{
