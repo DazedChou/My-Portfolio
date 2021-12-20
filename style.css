@@ -76,7 +76,7 @@ main {
 
 }
 
-.work-info header{
+.main-work-info header, .subwork header{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -85,13 +85,28 @@ main {
     color: turquoise;
 }
 
-.work-info header a{
+.main-work-info header a, .subwork header a{
     color:turquoise;
     text-decoration: underline;
     font-size: 24px;
 }
-#1-link:visited{
-    color: tomato;
+
+.subwork{
+    display: flex;
+    flex: 1 0 0;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.subheader{
+    align-items: stretch;
+    flex: 1 0 0;
+}
+.subwork img {
+    width: 100%;
+    flex: 1 0 0;
+    min-width: 400px;
 }
 
 
@@ -106,6 +121,17 @@ main {
 .center-right h2{
     margin: auto 20px;
 }
+
+a img {
+    border-radius: 20px;
+    border: 3px solid turquoise;
+
+}
+#contact-me{
+    justify-content: center;
+    text-align: center;
+}
+
 
 /* .my-work{
     display: flex;
