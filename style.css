@@ -28,7 +28,6 @@ header ul li , header ul li a{
 }
 
 .photo {
-    height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("/digital-marketing-meeting.jpg");
@@ -75,7 +74,9 @@ main {
     text-align: center;   
 
 }
-
+.main-work-info{
+    margin: 1%;
+}
 .main-work-info header, .subwork header{
     display: flex;
     flex-direction: column;
@@ -93,7 +94,7 @@ main {
 
 .subwork{
     display: flex;
-    flex: 1 0 0;
+    flex: 1 0 300px;
     width: 100%;
     flex-wrap: wrap;
     align-items: stretch;
@@ -102,13 +103,20 @@ main {
 .subheader{
     align-items: stretch;
     flex: 1 0 0;
+    margin: 1%;
+    width: 500px;
 }
 .subwork img {
+    flex-wrap: wrap;
     width: 100%;
     flex: 1 0 0;
-    min-width: 400px;
+    width: 500px;
+
 }
 
+div a{
+    justify-content: flex-start;
+}
 
 .center-right{
     display: flex;
