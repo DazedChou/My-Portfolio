@@ -52,6 +52,7 @@ main {
 .about-title{
     width: 30%;
     margin: auto;
+    font-size: 20px;
 }
 .about-info{
     display: flex;
@@ -72,7 +73,7 @@ main {
     width: 30%;
     margin: auto;
     text-align: center;   
-
+    font-size: 20px;
 }
 .main-work-info{
     margin: 1%;
@@ -104,13 +105,13 @@ main {
     align-items: stretch;
     flex: 1 0 0;
     margin: 1%;
-    width: 500px;
+
 }
 .subwork img {
     flex-wrap: wrap;
     width: 100%;
     flex: 1 0 0;
-    width: 500px;
+
 
 }
 
@@ -138,6 +139,7 @@ a img {
 #contact-me{
     justify-content: center;
     text-align: center;
+    text-decoration: underline;
 }
 
 
@@ -149,8 +151,48 @@ a img {
     
 } */
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1200px){
+    .subheader a img, .subheader a{
+        width: 300px;
+    }
+    .subheader div h2, .subheader div a{
+        font-size: medium;
+    }
+    div .center-right{
+        width: 250px;
+    }
+    .main-header h1{
+        font-size: 30px;
+    }
+    .main-header nav ul li a{
+        font-size:20px;
+    }
+    .about-title{
+        font-size: 17px;
+    }
+    .work-title{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:900px){
     .card{
         flex: 1 0 100px;
+    }
+    .subheader a img, .subheader a{
+        width: 250px;
+    }
+    .subheader div h2, .subheader div a{
+        font-size: medium;
+    }
+    .main-header h1{
+        font-size: 25px;
+    }
+
+    .about-title{
+        font-size: 15px;
+    }
+    .work-title{
+        font-size: 15px;
     }
 }
