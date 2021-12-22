@@ -67,7 +67,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 2%;
+    margin: 0 2%;
 }
 .work-title {
     width: 30%;
