@@ -11,6 +11,7 @@ header h1 {
 body{
     background-color:rgb(195, 226, 231);
 }
+/* Header with my name and nav */
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -21,12 +22,14 @@ body{
     margin: 0%;
 }
 
+/* styling for nav */
 header ul li , header ul li a{
     display: inline;
     color: white;
     font-size: 25px;
 }
 
+/* photo banner right under the header */
 .photo {
     width: 100%;
     margin-bottom: 25px;
@@ -34,6 +37,7 @@ header ul li , header ul li a{
     background-size: cover;
     background-position: center;
 }
+/* setting main content as a flex container */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +45,7 @@ main {
 }
 
 
-
+/* setting about me section as flex container */
 .about-me{
    display: flex;
    flex-direction: column;
@@ -49,35 +53,43 @@ main {
    text-align: center;
    width: 100%;
 }
+
+/* setting sub header size and centering it  */
 .about-title{
-    width: 30%;
-    margin: auto;
+    text-align: center;
     font-size: 20px;
 }
+/* setting about info section as flex container */
 .about-info{
     display: flex;
     flex-direction: row;
     margin-top: 1%;
 }
+.about-info img{
+    margin-right: 10px;
+}
+/* styling for a horizontal line */
 .vl {
     border-bottom: 3px solid #13293d;
     float: top;
 }
+/* setting up flex container for my work */
 .work{
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 0 2%;
 }
+/* styling sub header for my work */
 .work-title {
-    width: 30%;
-    margin: auto;
     text-align: center;   
     font-size: 20px;
 }
+
 .main-work-info{
     margin: 1%;
 }
+/* styling project names*/
 .main-work-info header, .subwork header{
     display: flex;
     flex-direction: column;
@@ -85,14 +97,17 @@ main {
     text-align: center;
     height: 300px;
     color: turquoise;
+    
 }
 
+/* styling hyperlink to repository*/
 .main-work-info header a, .subwork header a{
     color:turquoise;
     text-decoration: underline;
     font-size: 24px;
 }
 
+/* create flex container for the lesser important works */
 .subwork{
     display: flex;
     flex: 1 0 300px;
@@ -100,24 +115,24 @@ main {
     flex-wrap: wrap;
     align-items: stretch;
 }
-
+/* aligning sub works to be spaced evenly and to grow */
 .subheader{
     align-items: stretch;
     flex: 1 0 0;
     margin: 1%;
 
 }
+
+/* set image to fill up space */
 .subwork img {
     flex-wrap: wrap;
     width: 100%;
     flex: 1 0 0;
-
-
 }
 
-div a{
+/* div a{
     justify-content: flex-start;
-}
+} */
 
 .center-right{
     display: flex;
@@ -127,30 +142,26 @@ div a{
     background:#13293d;
 }
 
+/* styling project name */
 .center-right h2{
     margin: auto 20px;
 }
 
+/* styling image */
 a img {
     border-radius: 20px;
     border: 3px solid turquoise;
 
 }
+
+/* styling contact information */
 #contact-me{
     justify-content: center;
     text-align: center;
     text-decoration: underline;
 }
 
-
-/* .my-work{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    
-} */
-
+/* adjusting parameters for various screen sizes */
 @media screen and (max-width:1200px){
     .subheader a img, .subheader a{
         width: 300px;
@@ -175,6 +186,7 @@ a img {
     }
 }
 
+/* adjusting parameters for various screen sizes */
 @media screen and (max-width:900px){
     .card{
         flex: 1 0 100px;
